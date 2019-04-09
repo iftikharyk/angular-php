@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Database table Config
+CREATE TABLE IF NOT EXISTS `cars` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `model` varchar(255) NOT NULL DEFAULT '',
+  `price` int (10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
